@@ -6,6 +6,7 @@
 
 该项目为课程作业项目，将yolov10的backbone替换为RT-DETR的PP-HGNetv2，取得了涨点，并且推理速度也高于RT-DETR，若要使用我们的yolov10魔改的HG版本，请在你的conda环境中找到对应的env，比如我的conda虚拟环境叫yolo，那么进入路径yolo/lib/python3.8/site-packages/ultralytics/cfg/models/v10，创建一个yolov10HG，内容为：
 
+···
 # Ultralytics YOLO 🚀, AGPL-3.0 license
 # YOLOv10 object detection model. For Usage examples see https://docs.ultralytics.com/tasks/detect
  
@@ -53,5 +54,6 @@ head:
   - [-1, 3, C2fCIB, [1024, True, True]] # 23 (P5/32-large)
  
   - [[17, 20, 23], 1, v10Detect, [nc]] # Detect(P3, P4, P5)
+···
 
 最后运行yolov10-HG.py即可，若需要修改和教程请参考https://docs.ultralytics.com/zh/modes/train
