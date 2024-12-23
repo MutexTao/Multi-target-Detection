@@ -4,7 +4,7 @@
 
 更多操作请参考https://docs.ultralytics.com/zh/quickstart/
 
-该项目为课程作业项目，将yolov10的backbone替换为RT-DETR的PP-HGNetv2，取得了涨点，并且推理速度也高于RT-DETR，若要使用我们的yolov10魔改的HG版本，请在你的conda环境中找到对应的env，比如我的conda虚拟环境叫yolo，那么进入路径yolo/lib/python3.8/site-packages/ultralytics/cfg/models/v10，创建一个yolov10HG，内容为：
+该项目为课程作业项目，使用VOC数据集，需要在../dataset/中进行下载，具体下载地址请参考yolo官方，将yolov10的backbone替换为RT-DETR的PP-HGNetv2，取得了涨点，并且推理速度也高于RT-DETR，若要使用我们的yolov10魔改的HG版本，请在你的conda环境中找到对应的env，比如我的conda虚拟环境叫yolo，那么进入路径yolo/lib/python3.8/site-packages/ultralytics/cfg/models/v10，创建一个yolov10HG，内容为：
 
 ```
 # Ultralytics YOLO 🚀, AGPL-3.0 license
